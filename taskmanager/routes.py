@@ -41,7 +41,6 @@ def delete_category(category_id):
     db.session.delete(category)
     db.session.commit()
     return redirect(url_for("categories"))
-<<<<<<< HEAD
 
 
 @app.route("/add_task", methods=["GET", "POST"])
@@ -81,5 +80,3 @@ def delete_task(task_id):
     db.session.delete(task)
     db.session.commit()
     return redirect(url_for("home"))
-=======
->>>>>>> 3464b38ca2fba0a86fb835107bff3b354739cb52
